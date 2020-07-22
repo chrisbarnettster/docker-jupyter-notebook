@@ -24,5 +24,5 @@ python /get_notebook.py
 
 jupyter trust /import/ipython_galaxy_notebook.ipynb
 ##/monitor_traffic.sh &
-jupyter notebook --no-browser
+jupyter notebook --no-browser --allow-root
 
