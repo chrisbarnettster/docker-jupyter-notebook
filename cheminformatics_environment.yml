@@ -1,0 +1,11 @@
+name: cheminformatics
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - openbabel
+  - rdkit
+  - pandas
+  - seaborn
+  - ipykernel
+  - nb_conda_kernels

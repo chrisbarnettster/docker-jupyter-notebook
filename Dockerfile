@@ -27,7 +27,11 @@ USER jovyan
 
 # update the base conda environment
 RUN  conda update -n base conda && \
-    pip install --no-cache-dir bioblend galaxy-ie-helpers ipydatawidgets
+     conda install ipykernel nb_conda_kernels && \
+     pip install --no-cache-dir bioblend galaxy-ie-helpers ipydatawidgets
+
+# include jupyterlab extensions
+RUN /opt/conda/bin/jupyter labextension install @jupyterlab/hub-extension @jupyter-widgets/jupyterlab-manager
 
 # Include conda environments (requirements)
 ADD mdanalysis_environment.yml mdanalysis_environment.yml

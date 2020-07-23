@@ -1,0 +1,12 @@
+name: mdanalysis
+channels:
+  - conda-forge
+  - bioconda
+  - ambermd
+dependencies:
+  - mdanalysis
+  - mdanalysistests
+  - pytraj
+  - nglview
+  - ipykernel
+  - nb_conda_kernels
